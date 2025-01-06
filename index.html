@@ -341,7 +341,14 @@
                     <button type="button" 
                     class="btn btn-light"
                     onclick="addTask()"
-                    >Submit</button>
+                    id="add"
+                    >Add</button>
+
+                    <button type="button" 
+                    class="btn btn-danger d-none "
+                    onclick="updateTask()"
+                    id="update"
+                    >Edit</button>
     
                 </form>
                 <div class="px-2 d-flex justify-content-between align-items-center gap-3 bg-info-subtle border-2 rounded-2 w-75">
@@ -349,7 +356,7 @@
                     <div class="row py-2 border-bottom border-black w-100">
                         <div class="col-3 col-lg-6 col-sm-3 fw-bold fs-6 text-center">Task</div>
                         <div class="col-3 col-lg-2 col-sm-3 fw-bold fs-6 text-center">Done</div>
-                        <div class="col-3 col-lg-2 col-sm-3 fw-bold fs-6 text-center">Delay</div>
+                        <div class="col-3 col-lg-2 col-sm-3 fw-bold fs-6 text-center">Edit</div>
                         <div class="col-3 col-lg-2 col-sm-3 fw-bold fs-6 text-center cursor-pointer">Delete</div>
                     </div>
                     <div class="row py-2 border-2 border-black"
